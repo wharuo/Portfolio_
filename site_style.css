@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --col-fir: #000000;
+    --col-sec: #f6f6f6;
+    --col-thi: #fdb422;
+    --col-hover: #272727;
+
+    --font-fir: 'Krona One', sans-serif;
+    --font-sec: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--col-fir);
+    color: var(--col-sec);
+}
+.ini{
+    padding: 2% 0% 0% 15%;
+}
+.ini__menu{
+    display: flex;
+    gap: 80px;
+}
+.ini__menu__link{
+    font-family: var(--font-sec);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--col-thi);
+    text-decoration: none;
+}
+.show{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.show__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.show__content__title{
+    font-size: 2.25rem;
+    font-family: var(--font-fir);
+}
+.title-highlight{
+    color: var(--cor-thi);
+}
+.show__content__text{
+    font-size: 1.5rem;
+    font-family: var(--font-sec);
+}
+
+.show__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.show__links__subtitle{
+    font-family: var(--font-fir);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.show__links__browse{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--col-thi);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-sec);
+    font-family: var(--font-sec);
+}
+.bx__linkedin, .bx__github {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+.show__links__link:hover{
+    background-color: var(--col-hover);
+}
+.show__imagem{
+    width: 50%;
+}
+.base{
+    color: var(--col-fir);
+    background-color: var(--col-thi);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-sec);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .ini{
+         padding: 10%;  
+    }
+    .ini__menu{
+        justify-content: center;
+    }
+    .show{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .show__content{
+        width: auto;
+    }
+}

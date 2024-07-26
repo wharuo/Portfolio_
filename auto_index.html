@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Auto Writing</title>
+  <meta name="description" content="Auto writing texts dynamically">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="auto_styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="back">Home</a>
+  </nav>
+
+  <main class="container">
+    <h1 id="zero" data-autowriting="true" data-speed="very-fast" data-begin="on-load" data-delay="2" data-random="true">Auto-writing texts!</h1>
+  </main>
+
+  <section class="container">
+    <h1 id="first" data-autowriting="true" data-speed="very-fast" data-begin="on-load" data-delay="4" data-random="true">Hello World!</h1>
+    <p class="text">
+      I hope this message finds you well. I am writing to express my enthusiasm about our ongoing development projects and the decision to incorporate TypeScript into our development stack has proven to be a game-changer in the world of software development. Its statically-typed nature brings a new level of robustness and predictability to our codebase, allowing us to catch potential issues during development rather than at runtime. This not only improves the overall reliability of our applications but also enhances the developer experience by providing helpful insights and autocompletion support.
+    </p>
+  </section>
+
+  <section class="container">
+    <h2 id="third" data-autowriting="true" data-speed="fast" data-begin="click-touch" data-delay="0" data-random="true">Activated on click or touch!</h2>
+    <p class="text">
+      In terms of developer productivity, shines by reducing the likelihood of runtime errors, enabling faster development cycles, and facilitating better collaboration between team members. The enhanced tooling support, including compiler and popular integrated development environments (IDEs), contributes to a more efficient and enjoyable development process. As we continue to embrace in our projects, I believe we are not only adopting a cutting-edge technology but also positioning ourselves for future success. The vibrant community, combined with its active development and continuous improvement, ensures that we stay ahead of the curve in terms of language features, best practices, and industry standards.
+    </p>
+  </section>
+
+  <section class="container">
+    <h2 id="second" data-autowriting="true" data-speed="normal" data-begin="scroll" data-delay="0" data-random="true">Activated on scroll</h2>
+    <p class="text" data-autowriting="true" data-speed="very-fast" data-begin="scroll" data-delay="1" data-random="true">
+      As we continue to embrace in our projects, I believe we are not only adopting a cutting-edge technology but also positioning ourselves for future success. The vibrant community, combined with its active development and continuous improvement, ensures that we stay ahead of the curve in terms of language features, best practices, and industry standards.
+    </p>
+  </section>
+
+  <section class="container">
+    <h2 id="fourth" data-autowriting="true" data-speed="fast" data-begin="js" data-delay="0" data-random="true">Activated via JavaScript</h2>
+    <p class="text">
+      I am excited about the positive impact will have on our projects, and I look forward to witnessing the accelerated development, improved code quality, and enhanced collaboration it brings to our team.
+    </p>
+  </section>
+
+  <script src="auto_scripts.js"></script>
+</body>
+</html>

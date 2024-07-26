@@ -1,0 +1,67 @@
+:root {
+  --cinza: #aaaaaa;
+  --green: #00f100;
+  --green-dark: #1b642b;
+  --red-dark: #4d0101;
+  --green-light: rgb(43, 255, 0);
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #ffcaca 0%,#0077ff 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--red-dark);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  box-shadow: 6px 8px 0 6px #686666, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--red-dark);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--green);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--green);
+  border: 4px solid  var(--green);
+  box-shadow: 3px 3px 0 var(--green-dark) inset;
+  color: var(--red-dark);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--green-light);
+}
+
+.tecla.ativa:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--green-dark) inset, 1px 1px 10px var(--green-light);
+}
